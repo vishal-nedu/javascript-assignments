@@ -1,0 +1,23 @@
+ul{
+    list-style: none;
+}
+#title-container
+{
+    background-color:aquamarine;
+
+}
+#todo,#categorize
+{
+    background-color:greenyellow;
+}
+li{
+    margin-bottom: 10px;
+    padding:8px;
+    display: flex;
+    align-items: center;
+    margin: left 0%;;
+    gap: 10px;
+    background-color: lightskyblue;
+    text-transform: capitalize;
+    
+}

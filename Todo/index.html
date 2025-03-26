@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="title-container">
+        <center>
+        <h1>
+            TODO 
+        </h1>
+        </center>
+        <hr>
+    </div>
+    <div id="todo" >
+        <br>
+        <br>
+    <center>
+        <form id="details">        
+            <table>
+            <tr>
+            <thead>
+            <th>
+                <label for="tasks">
+                    Enter the task
+                    </label>
+                    <input type="text" id="ta">        
+            </th>
+            <th>
+                <label for="category">
+                    Select category
+                    </label>
+                    <select id="category">
+                        <option>Personal</option>
+                        <option>Work</option>
+                        <option>Urgent</option>
+                    </select>
+            </th>
+            <!-- <th>
+                <label for="Priority">Priority</label>
+                <select id="Priority">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </th> -->
+            <!-- <th>
+                <label for="date">Date</label>
+                <input type="date"id="dat">
+            </th> -->
+            <th>
+                <button type="submit">Add</button>
+            </th>
+            </form>
+                </thead>
+                </tr>
+            </table>
+    </center>
+    <br>
+    <br>
+    <br>
+    <div id="categorize">
+        <center>
+        <table>
+            <tr>
+            <thead>
+                <th><button onclick="filterTasks('all')">show all</button></th>
+                <th><button onclick="filterTasks('Personal')">Personal</button></th>
+                <th><button onclick="filterTasks('Work')">Work</button></th>
+                <th><button onclick="filterTasks('Urgent')">Urgent</button></th>
+                <th><button onclick="Delteall()">Clear all</button></th>
+                </thead>
+        </table>
+    </div>
+    <br>
+    <br>
+    <hr>
+    </div>
+    <div id="display">
+       <ul id="list"><center></center></ul>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
